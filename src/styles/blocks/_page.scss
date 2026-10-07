@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.page {
+  font-family: $font-main;
+  color: $color-ink;
+  background-color: $color-page;
+  background-image: radial-gradient(rgba(32, 32, 32, 0.045) 0.7px, transparent 0.7px);
+  background-size: 11px 11px;
+  line-height: 1.45;
+
+  &__main {
+    width: min(100% - #{$page-pad * 2}, $content-width);
+    margin: 0 auto;
+    padding: 16px 0 56px;
+
+    @include tablet {
+      padding: 28px 0 72px;
+    }
+  }
+}

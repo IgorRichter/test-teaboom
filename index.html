@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ананасовый улун — светлый фуцзяньский улун с ароматом ананаса. Интернет-магазин чая Teaboom.ru"
+    />
+    <title>Ананасовый улун — Teaboom.ru</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__brand" href="https://teaboom.ru" target="_blank" rel="noreferrer">
+          <img
+            class="header__logo"
+            src="/images/logo.png"
+            alt=""
+            width="40"
+            height="40"
+          />
+          <span class="header__name">Teaboom.ru</span>
+        </a>
+        <p class="header__note">Карточка товара · тестовая вёрстка</p>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <article class="product" data-product itemscope itemtype="https://schema.org/Product">
+        <div class="product__layout">
+          <div class="product__gallery">
+            <div class="product__frame">
+              <img
+                class="product__image"
+                src="/images/ananasovij-ulun.jpg"
+                alt="Сухой лист ананасового улуна с цукатами ананаса"
+                width="970"
+                height="970"
+                itemprop="image"
+              />
+              <p class="product__badge" data-js-discount>
+                <span class="product__badge-value">-7%</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="product__info">
+            <nav class="product__category" aria-label="Категория">
+              <a
+                class="product__category-link"
+                href="https://teaboom.ru/category-ulun"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Улун
+              </a>
+              <span class="product__category-sep" aria-hidden="true">/</span>
+              <a
+                class="product__category-link"
+                href="https://teaboom.ru/category-aromatizirovannyj-ulun"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ароматизированный
+              </a>
+            </nav>
+
+            <h1 class="product__title" itemprop="name">Ананасовый улун</h1>
+
+            <p class="product__sku">
+              арт.
+              <span data-js-sku itemprop="sku">01306</span>
+            </p>
+
+            <section class="packing">
+              <h2 class="packing__label" id="packing-label">Фасовка</h2>
+              <div
+                class="packing__list"
+                role="radiogroup"
+                aria-labelledby="packing-label"
+              >
+                <button
+                  class="packing__item packing__item--current"
+                  type="button"
+                  role="radio"
+                  aria-checked="true"
+                  tabindex="0"
+                  data-packing-item
+                  data-weight="100 г"
+                  data-sku="01306"
+                  data-price="326.40"
+                  data-old-price="349.20"
+                >
+                  100 г
+                </button>
+                <button
+                  class="packing__item"
+                  type="button"
+                  role="radio"
+                  aria-checked="false"
+                  tabindex="-1"
+                  data-packing-item
+                  data-weight="500 г"
+                  data-sku="01307"
+                  data-price="1432"
+                  data-old-price="1646"
+                >
+                  500 г
+                </button>
+                <button
+                  class="packing__item"
+                  type="button"
+                  role="radio"
+                  aria-checked="false"
+                  tabindex="-1"
+                  data-packing-item
+                  data-weight="1000 г"
+                  data-sku="01308"
+                  data-price="2064"
+                  data-old-price="2592"
+                >
+                  1000 г
+                </button>
+                <button
+                  class="packing__item"
+                  type="button"
+                  role="radio"
+                  aria-checked="false"
+                  tabindex="-1"
+                  data-packing-item
+                  data-weight="5000 г"
+                  data-sku="01309"
+                  data-price="6320"
+                  data-old-price="8710"
+                >
+                  5000 г
+                </button>
+              </div>
+            </section>
+
+            <div class="product__offer" aria-live="polite">
+              <div class="product__prices">
+                <p class="product__price" data-js-price itemprop="price" content="326.40">
+                  326,40 ₽
+                </p>
+                <p class="product__price-old" data-js-old-price>
+                  <span class="visually-hidden">Старая цена</span>
+                  <s>349,20 ₽</s>
+                </p>
+                <meta itemprop="priceCurrency" content="RUB" />
+              </div>
+
+              <button class="button button--cart" type="button" data-cart>
+                <span class="button__icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M6 6h15l-1.5 9h-12L6 6Zm0 0L5 3H2"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle cx="9" cy="20" r="1.4" fill="currentColor" />
+                    <circle cx="18" cy="20" r="1.4" fill="currentColor" />
+                  </svg>
+                </span>
+                <span class="button__text">В корзину</span>
+              </button>
+            </div>
+
+            <section class="product__excerpt" itemprop="description">
+              <h2 class="product__excerpt-title">О товаре</h2>
+              <p class="product__excerpt-lead">
+                Светлый фуцзяньский улун с ароматом ананаса. В сухом виде — крупный
+                изумрудный лист, скруткой напоминающий Те Гуань Инь.
+              </p>
+              <p class="product__excerpt-text">
+                Настой прозрачный, светло-янтарного цвета. Классическая нота светлого
+                фуцзяньского улуна переплетается с яркой ананасовой нотой.
+              </p>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <div class="notice" data-notice role="status" aria-live="polite" hidden>
+      <p class="notice__text" data-notice-text></p>
+    </div>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

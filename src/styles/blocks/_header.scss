@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header {
+  border-bottom: 1px solid $color-line;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+
+  &__inner {
+    width: min(100% - #{$page-pad * 2}, $content-width);
+    margin: 0 auto;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__note {
+    display: none;
+    color: $color-muted;
+    font-size: 12px;
+    text-align: right;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}

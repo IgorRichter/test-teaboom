@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.button {
+  appearance: none;
+  border: 0;
+
+  &--cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 54px;
+    padding: 0 22px 0 8px;
+    border-radius: $radius-pill;
+    background: $color-brand;
+    color: $color-ink;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+
+    @include tablet {
+      min-width: 220px;
+      align-self: flex-start;
+    }
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $color-paper;
+    color: $color-ink;
+    flex-shrink: 0;
+  }
+
+  &--cart:hover,
+  &--cart:focus-visible {
+    background: $color-ink;
+    color: $color-brand;
+  }
+
+  &--cart:hover &__icon,
+  &--cart:focus-visible &__icon {
+    background: $color-brand;
+    color: $color-ink;
+  }
+
+  &--cart:focus-visible {
+    @include focus-ring;
+  }
+
+  &--cart:active {
+    transform: translateY(1px);
+  }
+}
