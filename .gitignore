@@ -10,7 +10,6 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-styles/*.css
 styles/*.css.map
 *.local
 

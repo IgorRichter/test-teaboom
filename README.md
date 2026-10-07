@@ -34,6 +34,8 @@ npm run preview
 
 Готовые файлы окажутся в `dist/`. Сборка на Sass, `copyfiles` и `serve` — без Vite и без своих Node-скриптов, поэтому ставится и запускается на Windows и Mac.
 
+На GitHub Pages (адрес вида `username.github.io/test-teaboom/`) пути в HTML относительные, иначе браузер ищет стили и картинки в корне `username.github.io`, а не в репозитории. В репозиторий нужно коммитить собранный `styles/main.css` (`npm run css`).
+
 ## Структура
 
 ```text
